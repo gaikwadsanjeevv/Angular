@@ -51,12 +51,23 @@ It serves as the command-line interface for Angular projects
 > cd blog  
 > code . //to open in vscode  
 > ng serve //will build the project and start running on browser.
-<img width="661" alt="image" src="https://github.com/user-attachments/assets/e3bae34f-48ad-44f0-81ca-937a43c2ce07" />
-> gives the local address to run project.
-> When u install a particular version of angular CLI which installs the latest version, you get to see same angular version in package.json file.
-> Now if u want to install an older version of angular then you go ahead and first uninstall the npm cli version, and then install the required version as:
-> npm install -gangular/cli@10.0.0
+<img width="661" alt="image" src="https://github.com/user-attachments/assets/e3bae34f-48ad-44f0-81ca-937a43c2ce07" />  
+> gives the local address to run project.  
+> When u install a particular version of angular CLI which installs the latest version, you get to see same angular version in package.json file.  
+> Now if u want to install an older version of angular then you go ahead and first uninstall the npm cli version, and then install the required version as:  
+> npm install -gangular/cli@10.0.0  
 In case if you dont want to NVM (Node Version Manager) is a tool used to manage multiple versions of Node.js on the same machine. It allows you to easily switch between different versions of Node.js, which is especially useful if you are working on multiple projects that require different Node.js versions.
+
+#### Project Structure:  
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/15576668-0cca-4de3-b76a-2b871a3506e6" />  
+n an Angular project, multiple TypeScript configuration files (tsconfig.json, tsconfig.app.json, tsconfig.spec.json, etc.) are used to manage TypeScript compiler options for different parts of the project. Each file serves a specific purpose and inherits options from a base tsconfig.json. Here's a detailed explanation of their differences:  
+tsconfig.json: Base configuration for the entire project.  
+tsconfig.app.json: Specific to building and serving the Angular application.  
+tsconfig.spec.json: Specific to running unit tests and includes test-related files.  
+The .browserslistrc file in an Angular project (or other frontend projects) specifies the target browser support for your application. It is used by tools like Autoprefixer, Babel, and Angular’s build tools to ensure that the application works as expected on the specified browsers.  
+
+
+
 
 
 
