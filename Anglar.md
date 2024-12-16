@@ -66,6 +66,17 @@ tsconfig.app.json: Specific to building and serving the Angular application.
 tsconfig.spec.json: Specific to running unit tests and includes test-related files.  
 The .browserslistrc file in an Angular project (or other frontend projects) specifies the target browser support for your application. It is used by tools like Autoprefixer, Babel, and Angular’s build tools to ensure that the application works as expected on the specified browsers.  
 
+##### package.json:
+
+High-level configuration for the project.  
+Specifies version ranges for dependencies.  
+Manually editable.   
+##### package-lock.json:
+
+Automatically generated for dependency tree locking.  
+Ensures consistent builds by locking exact versions.  
+Should not be manually edited.  
+video 4
 
 
 
