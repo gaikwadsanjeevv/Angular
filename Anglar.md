@@ -55,7 +55,9 @@ It serves as the command-line interface for Angular projects
 > gives the local address to run project.
 > When u install a particular version of angular CLI which installs the latest version, you get to see same angular version in package.json file.
 > Now if u want to install an older version of angular then you go ahead and first uninstall the npm cli version, and then install the required version as:
-> npm install -gangular/cli@10.0.0  
+> npm install -gangular/cli@10.0.0
+In case if you dont want to NVM (Node Version Manager) is a tool used to manage multiple versions of Node.js on the same machine. It allows you to easily switch between different versions of Node.js, which is especially useful if you are working on multiple projects that require different Node.js versions.
+
 
 
 
