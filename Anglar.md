@@ -59,8 +59,9 @@ It serves as the command-line interface for Angular projects
 In case if you dont want to NVM (Node Version Manager) is a tool used to manage multiple versions of Node.js on the same machine. It allows you to easily switch between different versions of Node.js, which is especially useful if you are working on multiple projects that require different Node.js versions.
 
 #### Project Structure:  
-<img width="562" alt="image" src="https://github.com/user-attachments/assets/15576668-0cca-4de3-b76a-2b871a3506e6" />  
-n an Angular project, multiple TypeScript configuration files (tsconfig.json, tsconfig.app.json, tsconfig.spec.json, etc.) are used to manage TypeScript compiler options for different parts of the project. Each file serves a specific purpose and inherits options from a base tsconfig.json. Here's a detailed explanation of their differences:  
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/15576668-0cca-4de3-b76a-2b871a3506e6" /> 
+   
+In an Angular project, multiple TypeScript configuration files (tsconfig.json, tsconfig.app.json, tsconfig.spec.json, etc.) are used to manage TypeScript compiler options for different parts of the project. Each file serves a specific purpose and inherits options from a base tsconfig.json. Here's a detailed explanation of their differences:  
 tsconfig.json: Base configuration for the entire project.  
 tsconfig.app.json: Specific to building and serving the Angular application.  
 tsconfig.spec.json: Specific to running unit tests and includes test-related files.  
