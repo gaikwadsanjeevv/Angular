@@ -38,6 +38,15 @@ When we set up our API, we’ll be using npm to install some packages that were 
 <img width="885" height="312" alt="image" src="https://github.com/user-attachments/assets/df90b01f-26b3-4237-8ab4-82e83433e5e1" />
 <img width="945" height="418" alt="image" src="https://github.com/user-attachments/assets/0580d91d-d7c6-4736-8f60-4a548f446fa3" />
 
+### Creating Angular Project.  
+- Node JS  
+- Angular CLI  
+- Creating project  
+- Compile and run
+<img width="881" height="307" alt="image" src="https://github.com/user-attachments/assets/074c9479-63db-494f-9c90-8b8f498305ac" />
+<img width="987" height="581" alt="image" src="https://github.com/user-attachments/assets/cc0f783d-ec11-4b6e-adff-9cba440f4911" />
+
+
 
 
 
