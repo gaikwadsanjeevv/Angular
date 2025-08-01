@@ -30,4 +30,15 @@ When we set up our API, we’ll be using npm to install some packages that were 
 - Forms for gathering user input  
 - Services to interact with 3rd party APIs  
 - Routing for our application’s various pages.  
+<img width="941" height="366" alt="image" src="https://github.com/user-attachments/assets/157c2c9e-9fa5-4e12-8f4b-6eae2ec4872e" />
+
+- Angular is a javascript framework and not an programming language.  
+- Like it will provide predefined methods and class for creating API.  
+<img width="927" height="387" alt="image" src="https://github.com/user-attachments/assets/55dcb759-4b7d-4843-b1a1-fc1919a51056" />
+<img width="885" height="312" alt="image" src="https://github.com/user-attachments/assets/df90b01f-26b3-4237-8ab4-82e83433e5e1" />
+<img width="945" height="418" alt="image" src="https://github.com/user-attachments/assets/0580d91d-d7c6-4736-8f60-4a548f446fa3" />
+
+
+
+
 
