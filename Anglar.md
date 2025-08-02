@@ -45,6 +45,9 @@ When we set up our API, we’ll be using npm to install some packages that were 
 - Compile and run
 <img width="881" height="307" alt="image" src="https://github.com/user-attachments/assets/074c9479-63db-494f-9c90-8b8f498305ac" />
 <img width="987" height="581" alt="image" src="https://github.com/user-attachments/assets/cc0f783d-ec11-4b6e-adff-9cba440f4911" />
+<img width="947" height="327" alt="image" src="https://github.com/user-attachments/assets/d0451fde-3ef7-4b51-b294-acd248746244" />
+#### - Make a new file : ng new angular-ekart
+- Run:        'ng serve'
 
 
 
