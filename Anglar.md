@@ -49,8 +49,73 @@ When we set up our API, we’ll be using npm to install some packages that were 
 #### - Make a new file : ng new angular-ekart
 - Run:        'ng serve'
 
+- We are using Angular to generate dynamic content.
+- We have app-root component in index.html rendering the template page so if you see App folder you fine 4 important files.
+   - app.ts  
+   - app.html  
+   - app.css  
+   - app.spec.ts   //we write here unit test cases.
+  ** Value of selector in app.ts file of component can be used as HTML tag. We have a HTML file content and it is rendered on screen.
+     "@Component({  
+  selector: 'app-root',  
+  imports: [RouterOutlet],  
+  templateUrl: './app.html',  
+  styleUrl: './app.css'  
+ 
+})"  
+
+- So in app.html we tried to render the data dynamically also called data binding.
+   <h2>welcome to {{title}}</h2>  
+   Here the title is rendered from the app.ts file in class and we can change the value to render on the screen.  
+-  — in an Angular app, the TypeScript code you write in files like app.ts, app.component.ts, services, etc., gets compiled (transpiled) into JavaScript during the build process, and then this JavaScript is what runs in the browser.
+-  Does Type Safety Remain After TypeScript is Converted to JavaScript?  
+👉 No — type safety is removed during compilation.
+1. TypeScript provides type safety at compile-time (development phase):
+
+##### Folder Structure:  
+ - a) Node Module - all 3rd party libraries are stored here. We dont deploy on production server. It is purely for development purpose.
+ - if we delete the folder then we can bring back by 'npm install' in terminal and the folder is back with all dependencies required for the project+ Extra other Libraries.    
+ - b) So how do we know on which packages the angular project is dependent upon - package.json.
+ - It contain dependencies and dev dependencies: Dependencies are those on which our project is directly dependent. While the devdependencies is the angular project is dependent on which we are developing the project may need while developing.
+ - c) editorconfig - use to set up team environment. There are rules given by team lead he define the coding rules.
+ - d) .gitignore - helps to keep those file and folder which can be ignored in git repo.  
+ - d) Example in Temp -  i may keep some info or design so i can ignore this file.
+ - f) angular.json - very imp file- contails all confuration of the project.
+ - g) package-lock.json- records exact versions of every installed dependencies including its subdependencies and there versions. We may be installing the Angular app in production, integration, development environment so so make sure the all dependencies versions remain same.
+    - Development is for local coding and testing with full debugging support. Integration is for QA/testing teams to test features in a shared environment using real APIs.Production is the live version for end users, optimized, secure, and without debugging tools.
+ - h) tsconfig.json - contains bunch of setting for the typescript compiler this is responsible to convert to javaScript to compile and run.
+ - i) SRC - very important folder.
+      - IN angular project we can make multiple application, by default we get one that is App. We have 4 component file making an component. Every angular app must have an 'module and copoment'.
+   - j) assest folder we store static public resources like images, document.  
+
+  #### Bootstrapping angular application - is process of initializing or loading angular application.  
+
+  - when we do 'ng serve' it generates some bundles and injects into index.html.  But we cannot see those bundles so build the project by 'ng build'. We get to see a new filder created dist and it has 'index.html' where you can see those style files got injected.  
+- In angular application webpack traverses through looking for javaScript and other files and it merges them into one bundle javaScript file.  
+- In angular - Entry point the angular comes to know from Angular.json file - 'Options'  
+- In Index.html is polyfills file in script is used to: Not all browsers are compactible to modern javaScript so to make it comfortable we use polyfill.
+-  As we want to run the programme in browser we mention here platform-browser-dynamic.
+-  if we wanted to run in mobile then we have use platform-native-dynamic
+-  Every application has a module and when the application starts the 
 
 
+#### What is typescript.  
+- Free and open source programming language developed by microsoft, Superset of javaScript.
+- When we compile TypeScript - convert to javaScript- and can be run on browsers.
+- TypeScript has advantages- Strongly typed.
+- Has some OO features.
+- Catch errors at compile time.
 
+##### What is a component.  
+- Key feature - Angular is said to be component based javaScript framework.
+- Every Angular App has atleast 1 component - root component.
+  App component is root component and insert all the component in it: Header, navbar, Main(cover, content, subscribe), footer, sideba(popular course 1, popular course 2, popular course 3)
+
+  ###### How to create a component:
+  - Create a TypeScript class & export it.
+  - Decorate the class with @component decorator.
+  - Declare the class in main module file.  
+
+All components are created in the App folder- lets start with header- so lets make a folder 'Header' and a file inside it whose naming convention would be 'filename.component.ts' Inside the file create a typeScrpt class- convention is :  export class HeaderComponent {}  
 
 
