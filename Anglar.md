@@ -49,6 +49,28 @@ When we set up our API, we’ll be using npm to install some packages that were 
 #### - Make a new file : ng new angular-ekart
 - Run:        'ng serve'
 
+- We are using Angular to generate dynamic content.
+- We have app-root component in index.html rendering the template page so if you see App folder you fine 4 important files.
+   - app.ts  
+   - app.html  
+   - app.css  
+   - app.spec.ts   //we write here unit test cases.
+  ** Value of selector in app.ts file of component can be used as HTML tag. We have a HTML file content and it is rendered on screen.
+     "@Component({  
+  selector: 'app-root',  
+  imports: [RouterOutlet],  
+  templateUrl: './app.html',  
+  styleUrl: './app.css'  
+ 
+})"  
+
+- So in app.html we tried to render the data dynamically also called data binding.
+   <h2>welcome to {{title}}</h2>  
+   Here the title is rendered from the app.ts file in class and we can change the value to render on the screen.  
+-  — in an Angular app, the TypeScript code you write in files like app.ts, app.component.ts, services, etc., gets compiled (transpiled) into JavaScript during the build process, and then this JavaScript is what runs in the browser.
+-  Does Type Safety Remain After TypeScript is Converted to JavaScript?  
+👉 No — type safety is removed during compilation.
+1. TypeScript provides type safety at compile-time (development phase):
 
 
 
