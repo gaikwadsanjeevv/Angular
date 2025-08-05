@@ -72,6 +72,22 @@ When we set up our API, we’ll be using npm to install some packages that were 
 👉 No — type safety is removed during compilation.
 1. TypeScript provides type safety at compile-time (development phase):
 
+##### Folder Structure:  
+ - a) Node Module - all 3rd party libraries are stored here. We dont deploy on production server. It is purely for development purpose.
+ - if we delete the folder then we can bring back by 'npm install' in terminal and the folder is back with all dependencies required for the project+ Extra other Libraries.    
+ - b) So how do we know on which packages the angular project is dependent upon - package.json.
+ - It contain dependencies and dev dependencies: Dependencies are those on which our project is directly dependent. While the devdependencies is the angular project is dependent on which we are developing the project may need while developing.
+ - c) editorconfig - use to set up team environment. There are rules given by team lead he define the coding rules.
+ - d) .gitignore - helps to keep those file and folder which can be ignored in git repo.  
+ - d) Example in Temp -  i may keep some info or design so i can ignore this file.
+ - f) angular.json - very imp file- contails all confuration of the project.
+ - g) package-lock.json- records exact versions of every installed dependencies including its subdependencies and there versions. We may be installing the Angular app in production, integration, development environment so so make sure the all dependencies versions remain same.
+    - Development is for local coding and testing with full debugging support. Integration is for QA/testing teams to test features in a shared environment using real APIs.Production is the live version for end users, optimized, secure, and without debugging tools.
+ - h) tsconfig.json - contains bunch of setting for the typescript compiler this is responsible to convert to javaScript to compile and run.
+ - i) SRC - very important folder.
+      - IN angular project we can make multiple application, by default we get one that is App. We have 4 component file making an component. Every angular app must have an 'module and copoment'.
+   - j) assest folder we store static public resources like images, document.  
+      - 
 
 
 
