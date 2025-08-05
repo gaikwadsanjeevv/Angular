@@ -97,7 +97,25 @@ When we set up our API, we’ll be using npm to install some packages that were 
 -  As we want to run the programme in browser we mention here platform-browser-dynamic.
 -  if we wanted to run in mobile then we have use platform-native-dynamic
 -  Every application has a module and when the application starts the 
-- 
 
+
+#### What is typescript.  
+- Free and open source programming language developed by microsoft, Superset of javaScript.
+- When we compile TypeScript - convert to javaScript- and can be run on browsers.
+- TypeScript has advantages- Strongly typed.
+- Has some OO features.
+- Catch errors at compile time.
+
+##### What is a component.  
+- Key feature - Angular is said to be component based javaScript framework.
+- Every Angular App has atleast 1 component - root component.
+  App component is root component and insert all the component in it: Header, navbar, Main(cover, content, subscribe), footer, sideba(popular course 1, popular course 2, popular course 3)
+
+  ###### How to create a component:
+  - Create a TypeScript class & export it.
+  - Decorate the class with @component decorator.
+  - Declare the class in main module file.  
+
+All components are created in the App folder- lets start with header- so lets make a folder 'Header' and a file inside it whose naming convention would be 'filename.component.ts' Inside the file create a typeScrpt class- convention is :  export class HeaderComponent {}  
 
 
