@@ -87,8 +87,17 @@ When we set up our API, we’ll be using npm to install some packages that were 
  - i) SRC - very important folder.
       - IN angular project we can make multiple application, by default we get one that is App. We have 4 component file making an component. Every angular app must have an 'module and copoment'.
    - j) assest folder we store static public resources like images, document.  
-      - 
 
+  #### Bootstrapping angular application - is process of initializing or loading angular application.  
+
+  - when we do 'ng serve' it generates some bundles and injects into index.html.  But we cannot see those bundles so build the project by 'ng build'. We get to see a new filder created dist and it has 'index.html' where you can see those style files got injected.  
+- In angular application webpack traverses through looking for javaScript and other files and it merges them into one bundle javaScript file.  
+- In angular - Entry point the angular comes to know from Angular.json file - 'Options'  
+- In Index.html is polyfills file in script is used to: Not all browsers are compactible to modern javaScript so to make it comfortable we use polyfill.
+-  As we want to run the programme in browser we mention here platform-browser-dynamic.
+-  if we wanted to run in mobile then we have use platform-native-dynamic
+-  Every application has a module and when the application starts the 
+- 
 
 
 
