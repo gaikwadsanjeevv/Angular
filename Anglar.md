@@ -118,4 +118,11 @@ When we set up our API, we’ll be using npm to install some packages that were 
 
 All components are created in the App folder- lets start with header- so lets make a folder 'Header' and a file inside it whose naming convention would be 'filename.component.ts' Inside the file create a typeScrpt class- convention is :  export class HeaderComponent {}  
 
+======================================================================================================  
+Why to use Angular.  
+- With Aangular you can write declarative code.
+  - we write code in form of components.
+  - Simplify the process of building complex interactive web user interfaces.
+  - Angular uses mostly typeScript which make sure the run time type safety errors wont occur.
+  - 
 
