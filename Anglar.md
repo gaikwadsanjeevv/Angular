@@ -124,5 +124,58 @@ Why to use Angular.
   - we write code in form of components.
   - Simplify the process of building complex interactive web user interfaces.
   - Angular uses mostly typeScript which make sure the run time type safety errors wont occur.
-  - 
+  ###### Angular CLI used to allow develop, test, deploy, maintain angular application from CMD.
+  - npm install -g @angular/cli  
+  - ng version  
+  - Node Js Installation.  
+  - ng new first-angular-app
+  - Some extensions may be helpful to write the code in VSCODE.  
+ <img width="1156" height="247" alt="image" src="https://github.com/user-attachments/assets/b54edd7f-53ae-4904-a2ce-99f3219dd3d9" />
+ <img width="1220" height="238" alt="image" src="https://github.com/user-attachments/assets/86ac2213-3329-4abf-840d-ed77f8ff2c03" />
+ - npm start
+<img width="1288" height="497" alt="image" src="https://github.com/user-attachments/assets/79da0f32-510f-4082-b87f-11e4a0b53cb0" />  
+<img width="1192" height="627" alt="image" src="https://github.com/user-attachments/assets/be92b8c1-3e73-4b18-aace-586d2a80bc7e" />
+
+### Angular Essentials.  
+<img width="1242" height="512" alt="image" src="https://github.com/user-attachments/assets/5b3dd663-e0b7-4aa0-a912-586461d87747" />  
+- The files which we see in the root structure in image are essentially configuration file.
+<img width="1282" height="558" alt="image" src="https://github.com/user-attachments/assets/fb14a2fa-bd13-4527-bd50-035cf3aed5ee" />
+<img width="1228" height="703" alt="image" src="https://github.com/user-attachments/assets/f4ffebbe-21a3-45e2-b5bd-04d057bcba60" />
+
+Think of your Angular app as a tree 🌳:  
+Root NgModule = The trunk — the first thing connected to the soil (Angular runtime).  
+Feature Modules = Branches that grow from the trunk.  
+Components = Leaves that display the UI.  
+If you cut the Root NgModule, the whole tree dies — because nothing else has a starting point.  
+Why Angular Needs This  
+When Angular starts, it needs to know:  
+Which components exist in the app.  
+Which services are available globally.  
+Which first component to put on the screen.  
+All of this information is declared in the Root NgModule — in most projects, this is AppModule.  
+
+index.html — only HTML file actually loaded by the browser  
+→ Angular finds <app-root> placeholder  
+→ Angular replaces <app-root> with the root component’s rendered HTML  
+
+main.ts — entry point that starts Angular  
+→ calls platformBrowserDynamic().bootstrapModule(AppModule)  
+→ loads the Root NgModule  
+
+AppModule (Root NgModule) — declares/imports app pieces  
+→ bootstrap: [AppComponent] tells Angular which component to render first  
+
+AppComponent (Root Component) — has selector: 'app-root'  
+→ matches <app-root> in index.html  
+→ its template is rendered into the page  
+
+Result  
+- index.html loads → main.ts bootstraps AppModule → AppModule bootstraps AppComponent → AppComponent fills <app-root> → app UI appears  
+
+
+
+
+
+
+
 
