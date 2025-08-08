@@ -172,6 +172,32 @@ AppComponent (Root Component) — has selector: 'app-root'
 Result  
 - index.html loads → main.ts bootstraps AppModule → AppModule bootstraps AppComponent → AppComponent fills <app-root> → app UI appears  
 
+##### Angular 20+ File Naming Convention  
+- app.css  
+- app.html
+- app.ts
+- header.ts
+
+###### Making a new component.  
+- U can make as many parts of UI as individual component and combine them.
+- use export first to class so that it can be exported to use somewhere.
+- Class  nameofcomponentFunctionofComponent Ex.  class HeaderCOmponent
+
+- Standalone Component
+Introduced: Angular 14, to simplify the app structure and reduce boilerplate.  
+How it works:  
+You add standalone: true in the component’s decorator.  
+You can directly import other components, directives, and pipes into it.  
+You can bootstrap it directly in main.ts (no AppModule needed).
+
+In Angular.json file check for "src/assets" if not present add it, or else image cant upload also add "src/favicon.ico"  
+<img width="1086" height="185" alt="image" src="https://github.com/user-attachments/assets/c0d48e09-ed42-4b3f-bd58-2e8cbbf0afd7" /> 
+
+we must avoid calling bootstrap twice infact we must call the bootstrap once and then other component through it.  
+
+bootstrapApplication(App, appConfig).catch((err) => console.error(err));  
+  bootstrapApplication(HeaderComponent)  
+-  so assets folder must be in the src folder and not the app folder.  
 
 
 
